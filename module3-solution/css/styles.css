@@ -1,0 +1,164 @@
+body {
+    font-size: 16px;
+    color: #fff;
+    background-color: #d8d8d8;
+    font-family: 'Roboto', serif;
+    font-weight: 700;
+}
+
+/** HEADER **/
+
+#header-nav {
+    background-color: rgb(119, 119, 119);;
+    border-radius: 0;
+    border: 0;
+}
+
+.navbar-brand {
+    padding-top: 25px;
+}
+
+    .navbar-brand h1 { /* Restaurant name */
+        font-family: 'Roboto', serif;
+        color: #000;
+        font-size: 1.5em;
+        text-transform: uppercase;
+        font-weight: bold;
+        text-shadow: 1px 1px 1px #222;
+        margin-top: 0;
+        margin-bottom: 0;
+        line-height: 0;
+    }
+
+    .navbar-brand a:hover, .navbar-brand a:focus {
+        text-decoration: none;
+    }
+
+#nav-list {
+    margin-top: 10px;
+}
+
+    #nav-list a {
+        color: #fff;
+        text-align: center;
+    }
+
+        #nav-list a:hover {
+            background: rgb(218, 213, 213);
+        }
+
+        #nav-list a span {
+            font-size: 1.8em;
+        }
+
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+    border: 1px solid #fff;
+}
+
+.navbar-header button.navbar-toggle {
+    clear: right;
+    /* margin-top: 0px; */
+    background-color: #000
+}
+
+/* End Of Header */
+
+/* Beginning of Homepage */
+
+#pagename{
+    text-align: center;
+    font-size: 3em;
+    color: #000;
+}
+
+.jumbotron h1{
+    color: #000;
+    font-size: 2em;
+    text-align: center;
+    margin-top: -30px;
+}
+
+.jumbotron p{
+    color: #000;
+    font-weight: 300;
+}
+
+/* ------------------------------------------------------------------------------------- */
+
+/* Media Queries */
+
+@media (min-width: 1200px) {
+    /* ------Beginning Of Homepage------ */
+    .container .jumbotron {
+        background:rgb(119, 119, 119);
+        border: 2px;
+        height: 300px;
+    }
+            /* End Of Homepage */
+
+            /* Beginning Of Header */
+    #nav-list {
+        display: none;
+    }
+            /* End Of Header */
+}
+
+@media (min-width: 991px) and (max-width:1200px) {
+
+    /* ------Beginning Of Homepage------ */
+
+    .container .jumbotron {
+        background:rgb(119, 119, 119);
+        border: 2px;
+        height: 400px;
+    }
+            /* End Of Homepage */
+
+            /* Beginning Of Header */
+    #nav-list {
+        display: none;
+    }
+            /* End Of Header */
+}
+
+@media (min-width: 768px) and (max-width:991px) {
+
+    /* ------Beginning Of Homepage------ */
+
+    .container .jumbotron {
+        background:rgb(119, 119, 119);
+        border: 2px;
+        height: 432px;
+    }
+            /* End Of Homepage */
+
+            /* Beginning Of Header */
+
+    #nav-list {
+        display: none;
+    }
+            /* End Of Header */
+}
+
+@media (max-width:768px) {
+
+    /* Beginning Of Header */
+
+        .navbar-brand h1 {
+            font-size: 5vw;
+        }
+
+    #collapsable-nav a {
+        font-size: 1.2em;
+    }
+        /* End Of Header */
+
+        /* Beginning Of Homepage */
+
+    .container .jumbotron{
+        background:rgb(119, 119, 119);
+        border: 2px;
+        height: 550px;
+    }
+        /* End Of Homepage */
+}
